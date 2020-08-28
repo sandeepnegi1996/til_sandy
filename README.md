@@ -10,3 +10,14 @@ Repository while learning new things we can write down it here
 ### Maven
 1. maven clean test is failing since it will first clean the project and then test but the report is opened in the browser
   so maven is not able to clean the project and hence it was failing.
+
+
+### TestNg
+1. Use report ng report it is very easy just do Reporter.log and add the listeners in the testng.xml file 
+```code
+<listeners>
+	<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+	<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+	</listeners>
+```
+2. 
