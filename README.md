@@ -10,6 +10,10 @@ Repository while learning new things we can write down it here
 ### Maven
 1. maven clean test is failing since it will first clean the project and then test but the report is opened in the browser
   so maven is not able to clean the project and hence it was failing.
+  
+2. How to run a single test using maven
+	mvn test -Dtest=TestCase_report
+
 
 ### surefire-plugin
 1. to store all the xml files in one folder and  give that folder path.
