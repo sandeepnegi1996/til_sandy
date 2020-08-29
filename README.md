@@ -20,6 +20,9 @@ Repository while learning new things we can write down it here
 		String from=prop.getProperty("from_config");
 
 ```
+2. Whenever we read something from the properties files it will be string :smile: but we if we need an int value
+   we can use Integer.parseInt(prop.getProperty("age")) :boom: this function will convert the string to int.
+   
 
 ### Eclipse
 1. sometime when we press ctrl+1 to load the imports it doesn't work in that case just close the project from ide and open it again.
