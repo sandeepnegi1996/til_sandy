@@ -2,7 +2,12 @@
 Repository while learning new things we can write down it here
 
 
+### Keyboard Shortcuts
+1. Select a word :- ctrl+shift+LeftArrow
 
+### Bash
+1. Always use printf "instead of echo";
+2. To give next line  printf "\n";
 
 ### Java
 1. How to read from the config.properties : - 
