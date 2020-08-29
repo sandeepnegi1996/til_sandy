@@ -2,6 +2,10 @@
 Repository while learning new things we can write down it here
 
 
+
+### Eclipse
+1. sometime when we press ctrl+1 to load the imports it doesn't work in that case just close the project from ide and open it again.
+
 ### Excel
 1. To Add row in Excel --> Select row and then press --> ctrl + shift + "+"   :fire:
 2. To add multiple row in Excel --> Select multiple rows in excel --> ctrl +shift + "+" :computer: 
