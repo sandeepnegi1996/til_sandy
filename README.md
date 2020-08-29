@@ -3,6 +3,24 @@ Repository while learning new things we can write down it here
 
 
 
+
+### Java
+1. How to read from the config.properties : - 
+	1.Step1: create object of properties
+	2. Create object of fileInputStream and give the file path
+	3. load the input stream
+	4. use the method prop.getProperty to get the content of the properties files
+```java
+
+		String rootdirConfig = System.getProperty("user.dir")+"\\src\\main\\resources\\config.properties";
+		Properties prop=new Properties();
+		FileInputStream input=new FileInputStream(rootdirConfig);
+		prop.load(input);
+		String to= prop.getProperty("to_config");
+		String from=prop.getProperty("from_config");
+
+```
+
 ### Eclipse
 1. sometime when we press ctrl+1 to load the imports it doesn't work in that case just close the project from ide and open it again.
 
