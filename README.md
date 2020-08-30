@@ -10,6 +10,7 @@ Repository while learning new things we can write down it here
 2. To give next line  printf "\n";
 
 ### Java
+1. When ever we are writing in a file we open the output stream at the last we will not keep the stream open
 1. How to read from the config.properties : - 
 	1.Step1: create object of properties
 	2. Create object of fileInputStream and give the file path
