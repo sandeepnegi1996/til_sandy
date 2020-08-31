@@ -2,6 +2,38 @@
 Repository while learning new things we can write down it here
 
 
+### testng
+1. way to re run the failed tests implement this method and then also implement one more interface AnnotationTransformer
+```java
+
+public class RetryAnalyzer implements IRetryAnalyzer {
+
+	int counter = 0;
+	int retryLimit = 3;
+
+	public boolean retry(ITestResult arg0) {
+
+		if (counter < retryLimit) {
+			counter++;
+			return true;
+		}
+		return false;
+	}
+
+}
+
+
+
+public class AnnotationTransformer implements IAnnotationTransformer {
+
+	
+	public void transform(ITestAnnotation annotation,Class testClass,Constructor testConstructor,Method testMethod) {
+		annotation.setRetryAnalyzer(RetryAnalyzer.class);
+	}
+
+
+```
+
 ### Error
 1. Sometimes I edit an excel that is used in the program and then run the code i get the error this is since  
    I am some kind of dumb who forgets to close the file :boom:
