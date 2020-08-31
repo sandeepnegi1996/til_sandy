@@ -2,6 +2,10 @@
 Repository while learning new things we can write down it here
 
 
+### Error
+1. Sometimes I edit an excel that is used in the program and then run the code i get the error this is since  
+   I am some kind of dumb who forgets to close the file :boom:
+
 ### Keyboard Shortcuts
 1. Select a word :- ctrl+shift+LeftArrow
 
