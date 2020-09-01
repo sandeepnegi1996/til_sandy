@@ -46,6 +46,12 @@ public class AnnotationTransformer implements IAnnotationTransformer {
 2. To give next line  printf "\n";
 
 ### Java
+1. When we are creating string by concat it will create a new String on each contatenation in that function definitely we wanted
+   to return the final string as the output.In this case we will be creating numerous number of Strings to overcome this **StringBuilder**
+   comes whose object act as the normal string and you can just append to one object and later on return the final StirngBuilder object 
+   isn't it cool :cool:
+   
+   
 1. When ever we are writing in a file we open the output stream at the last we will not keep the stream open
 1. How to read from the config.properties : - 
 	1.Step1: create object of properties
