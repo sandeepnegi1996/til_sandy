@@ -2,6 +2,34 @@
 Repository while learning new things we can write down it here
 
 
+
+### log4j2.xml
+* Below mentioned is the log4j2.xml for the loggers i am using and I have changed the path where the logs needs to be stored in the FileAppender 
+   now I have given the logs directory as the directory to store the path for all the application logs.
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+    <Appenders>
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+        </Console>
+        <File name="FileAppender" fileName="logs//application-${date:yyyyMMdd}.log" immediateFlush="false" append="true">
+            <PatternLayout pattern="%d{yyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Root level="debug">
+            <AppenderRef ref="ConsoleAppender" />
+            <AppenderRef ref="FileAppender"/>
+        </Root>
+    </Loggers>
+</Configuration>
+
+
+```
+
+
 ### testng
 1. way to re run the failed tests implement this method and then also implement one more interface AnnotationTransformer
 ```java
