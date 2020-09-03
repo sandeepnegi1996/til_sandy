@@ -3,6 +3,11 @@ Repository while learning new things we can write down it here
 
 
 
+### How to enable the hyper-v using powershell
+* ```Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All ```
+
+
+
 ### log4j2.xml
 * Below mentioned is the log4j2.xml for the loggers i am using and I have changed the path where the logs needs to be stored in the FileAppender 
    now I have given the logs directory as the directory to store the path for all the application logs.
