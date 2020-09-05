@@ -1,7 +1,13 @@
 # til_sandy
 Repository while learning new things we can write down it here
 
-
+### Email protocols
+1. SMTP : **Simple mail transfer protocol** ::mail:: just used to send email to the receipient email server.It can only be used to send emails.
+2. IMAP Protocol :- **Internet Message Access Protocol**  IMAP is client server protocol in which email is received and held by your email server.
+			1. Only when we request to read a specific email message that will be downloaded from the server.
+			2. You can create and manipulate folders on the mail server and delete messages.
+3. POP3 Protocol :- **Post Office Protocol** its functionality is similar to the IMAP protocol but here we can download the messages to our computer.
+			2. 
 
 ### How to enable the hyper-v using powershell
 * ```Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All ```
