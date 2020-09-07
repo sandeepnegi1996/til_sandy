@@ -1,6 +1,25 @@
 # til_sandy
 Repository while learning new things we can write down it here
 
+
+### How to download the certificate to connect to some remote server ?
+1. condition:- So here I am trying  to connect to Windows Exchange Server so that I can read my mail box wether the particular 
+		email is present or not.
+		2. It provides soap services to request any kind of information but we are using java client library EWS to request 
+		   required information from the server
+		3. When ::smile:: we are trying we are getting error "unable to find valid certification path to requested target" ::angry::
+		4. For this we need to have the certs that is required for that we have one Program called as InstallCert.java ::happy::
+			https://github.com/sandeepnegi1996/InstallCert
+			
+		5. We can compile this program and run this program with our server url and the port number 
+			```java Example java InstallCert localhost.com:443
+			```
+		6. This will download the certificate ,then press enter so that it will be saved to the trusted keystore.
+		7. Ceritificate will be added to the 'jssecacerts' using alias 'some name '
+		8. Now we use this certificate. ::cool::
+		
+ 
+
 ### Email protocols
 1. SMTP : **Simple mail transfer protocol** ::mail:: just used to send email to the receipient email server.It can only be used to send emails.
 2. IMAP Protocol :- **Internet Message Access Protocol**  IMAP is client server protocol in which email is received and held by your email server.
