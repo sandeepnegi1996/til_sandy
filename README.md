@@ -2,6 +2,17 @@
 Repository while learning new things we can write down it here
 
 
+
+### How to add a Email subscription form ?  :point_left:
+1. go to convertful and create a widget
+2. form the wordpress and the plugin
+3. goto mailchimp
+4. create email list 
+5. send email
+6. verify that the emails are received using some settings.
+
+[Checkout the link for Tutorial](https://www.youtube.com/watch?v=U43FqbyOUf8&t=762s) 
+
 ### How to download the certificate to connect to some remote server ?
 1. condition:- So here I am trying  to connect to Windows Exchange Server so that I can read my mail box wether the particular 
 		email is present or not.
