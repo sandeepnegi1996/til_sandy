@@ -2,7 +2,103 @@
 Repository while learning new things we can write down it here
 
 
-### Blog post on selenium hub in the docker linux instance
+### Blog post on selenium hub in the docker linux instance :like:
+1.STEPS 
+
+```code
+	1. Updating linux Server
+		a. sudo apt-get update
+		b. sudo apt-get upgrade
+
+
+	2. Installing open jdk 1.8
+		a. sudo apt-get install openjdk-8-jdk
+
+	3. Installing docker 
+		a. sudo apt-get install \
+		    apt-transport-https \
+		    ca-certificates \
+		    curl \
+		    gnupg-agent \
+		    software-properties-common
+		
+		b. curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+		c. sudo apt-key fingerprint 0EBFCD88
+		 sudo add-apt-repository \
+		   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+		   $(lsb_release -cs) \
+		   stable"
+		
+		
+		d.  sudo apt-get update
+		 sudo apt-get install docker-ce docker-ce-cli containerd.io
+		
+	4. Installing docker compose
+		a. sudo curl -L "https://github.com/docker/compose/releases/download/1.27.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+		b. sudo chmod +x /usr/local/bin/docker-compose
+		
+
+	5. Make Sure the Custom TCP is enabled on the port number :4444 .
+	6. Creating a yml file for the Selenium hub
+		a. vi docker-compose-v3.yml
+		b. Paste the below mentioned content in this file
+		
+		version: "3"
+services:
+  selenium-hub:
+    image: selenium/hub:3.141.59-20200826
+    container_name: selenium-hub
+    ports:
+      - "4444:4444"
+		chrome:
+    image: selenium/node-chrome:3.141.59-20200826
+    volumes:
+      - /dev/shm:/dev/shm
+    depends_on:
+      - selenium-hub
+    environment:
+      - HUB_HOST=selenium-hub
+      - HUB_PORT=4444
+		firefox:
+    image: selenium/node-firefox:3.141.59-20200826
+    volumes:
+      - /dev/shm:/dev/shm
+    depends_on:
+      - selenium-hub
+    environment:
+      - HUB_HOST=selenium-hub
+      - HUB_PORT=4444
+		opera:
+    image: selenium/node-opera:3.141.59-20200826
+    volumes:
+      - /dev/shm:/dev/shm
+    depends_on:
+      - selenium-hub
+    environment:
+      - HUB_HOST=selenium-hub
+      - HUB_PORT=4444
+		
+		
+		
+	7. Run Docker compose 
+		a.  sudo docker-compose -f docker-compose-v3.yml up -d
+		b. sudo docker container ls
+
+	8. Check the containers are up and running 
+		a. sudo docker container ls
+
+	9. Check in the browser that the port is open and able to access the grid console
+		a. Serverip:4444/grid/console
+
+	10. Test using eclipse with some basic test case 
+	11. Test with generic test cases
+	12. Shut down the selenium grid
+		a. sudo docker-compose -f docker-compose-v3.yml down
+		
+		
+		
+		
+```
 
 ### Create a blog post on selenium grid 
 
