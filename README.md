@@ -1,7 +1,67 @@
 # til_sandy
 Repository while learning new things we can write down it here
 
+### UDEMY Linux course
 
+Date: 17/9/2020
+
+##### Section3: 
+
+1. First Project
+	a. Create new accounts
+	b. Check priviliges that the user is having the priviliges to create account
+	c. Reports if account creation failed.
+
+
+##### Additional things :
+
+1. Creating random passwords for the user
+
+	1. Shebang line --> #!/bin/bash
+	2. # --> sharp
+	3. !  --> bang
+	4. Combined called as shebang
+	5. What will happen here is basically it will call the bash and pass the filename as the argument
+	6. How permission works in linux 
+	7. So when you type --> ls -l
+	8. -rw-r--r--   1 sandy sandy Date
+	9. Here sandy the user will have the -rw --> means read write permission
+	10. Sandy second one will be group it will have read permission
+	11. Third one is for everyone else in the system they are having just read permission.
+	12. -r  --> read the file   (4)
+	13. -w   --> change the file content (2)
+	14. -x   --> execute the file   (1)
+	15. Chmod 755 filename.sh
+	16.  -  echo is the shell build in , 
+	
+	```code
+	#!/bin/bash
+	
+	#it will print some thing
+	
+	echo 'Just running file for hte first time '
+	
+	# Assigning a value to a variable
+	WORD='Sandeep'
+	
+	# Double quotes we are using to print the vaiable
+	echo "My name is  $WORD"
+	
+	#What will happen in single quotes with echo
+	
+	echo '$WORD'
+	
+	echo "This is another way ${WORD}"
+	
+	#lets combine two variables
+	
+	START='sandeep '
+	END='negi'
+	
+	echo "Lets print it together ${START}${END}"
+	
+	```
+	
 ### Blog post on selenium hub in the docker linux instance :like:
 1.STEPS 
 
