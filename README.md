@@ -1,6 +1,83 @@
 # til_sandy
 Repository while learning new things we can write down it here
 
+### UDEMY Docker course 
+#### Assignment1 
+
+	1. Lesson 1 Docker install and config
+
+Run sudo su --> first then use all the commands
+Docker container run --publish 80:80 nginx     --> it will run nginx container and map it to port 80 of host
+
+Docker container run --publish  80:80 --detach nginx   --> -d is used for the detach 
+
+Docker container ls    --> it will show all the running containers
+
+
+
+Docker container ls -a
+
+Docker container run --publish 80:80 --detach --name webhost nginx   --> if we will not give any name than docker give the name by itself
+
+
+Docker container logs webhost  --> it will show all the logs up till now
+
+Docker container top webhost    --> it will show all the processes that are running in the docker container --> in nginx
+								We have master and worker process.
+
+Docker container stop webhost
+**Docker container rm -f webhost**   --> since we cannot remove running container here we have two choices either stop the container and then remove it or do it forefully we are doing it forefully
+
+
+
+
+Lesson2 : 
+
+	1. Nginx: version
+	2. Creates a container based on the image
+	3. 80:80   -- > host:container port mapping
+
+
+Lesson 3:
+
+Docker top name_of_container
+It will give the running processes in that particular container
+
+Containers are like the services runnning on a machine
+
+	1. Docker container ps  --> will list all the running container 
+Docker top mongo
+Ps aux | grep mongo
+
+Pipe will take the outpur of the ps aux as the input in the grep command and search for that particular item
+
+
+
+Assignments 
+	1. Start multiple container 
+	2. Docs.docker.com
+	3. Run three container nginx,mysql and httpd (apache server
+	4. Use -d command
+	5. Use --name command
+	6. Nginx :--> 80:80 
+	7. Httpd:--> 8080:80
+	8. Mysql	3306:3306
+	9. Use --env for the password in the mysql
+	10. Check all containers are ruuning 
+	11. Remove all the containers
+
+
+Solution:
+1.  -docker run -d -p 3306:3306  -name database1 -e MYSQL_ROOT_PASSWORD=toor  mysql
+	2. -docker run --name webhost --publish 80:80 --detach nginx
+	3. -docker container run -d --name webserver -p 8080:80 httpd
+	4. -docker container stop database1 webhost webserver
+	5. -docker container rm database1 webhost webserver
+	6. To test hit the public dns with port 80 and 8080
+
+
+
+
 ### UDEMY Linux course
 
 Date: 17/9/2020
