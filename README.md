@@ -3,8 +3,9 @@ Repository while learning new things we can write down it here
 
 #### How to Clone a particualar branch 
 
+```code
 git clone --single-branch --branch <branchname> <remote-repo>
-
+```
 
 
 ### UDEMY Docker course 
