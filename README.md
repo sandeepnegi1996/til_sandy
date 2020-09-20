@@ -1,6 +1,23 @@
 # til_sandy
 Repository while learning new things we can write down it here
 
+#### 	2. How to Deploy WAR file locally Windows Tomcat Server ?
+
+	1.download apache tomcat
+		a. We can run the server using the bin directory and startup.bat in windows or startup.sh in mac
+		b. But to deploy the WAR file we need some roles 
+		<role rolename="manager-gui"/>
+			<role rolename="manager-script"/>
+			<user username="admin" password="password" roles="manager-gui, manager-script"/>
+		c. These roles we will be adding in the conf/tomcat-users.conf 
+		d. Paste the above role it will create user --> username and password to be password ,
+		e. No run the startup.bat
+		f. Go to localhost:8080 --> deploy a war 
+		g. It will ask for username and password  give it 
+	
+	Application will be deployed.
+
+
 #### How to Clone a particualar branch 
 
 ```code
