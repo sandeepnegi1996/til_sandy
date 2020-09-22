@@ -1,6 +1,15 @@
 # til_sandy
 Repository while learning new things we can write down it here
 
+
+#### How to Open the firefox browser in incognito mode using selenium ?
+	
+	```code
+	FirefoxOptions opts=new FirefoxOptions();
+	opts.addArguments("-private");
+	driver = new FirefoxDriver(opts);
+	```
+
 #### 	2. How to Deploy WAR file locally Windows Tomcat Server ?
 
 	1.download apache tomcat
