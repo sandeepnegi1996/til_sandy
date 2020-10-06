@@ -2,6 +2,15 @@
 Repository while learning new things we can write down it here
 
 
+#### How to Apply for leaves in corporate ?
+
+1. Please reconfirm during Sprint Planning of and plan the capacity.  
+2. Let us work together to prepare the test cases of 2020.11 release in advance before your leaves so you can begin testing right after your leaves
+3. Raise leave request in HRMS (or leave request system).
+4. Send out a calendar to your project team in our case it is workon.core
+5. Set up Auto reply for these leave dates in Outlook.
+
+
 #### How to Open the firefox browser in incognito mode using selenium ?
 	
 	```code
