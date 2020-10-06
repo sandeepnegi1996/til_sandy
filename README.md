@@ -1,6 +1,16 @@
 # til_sandy
 Repository while learning new things we can write down it here
 
+#### Daily tasks in corporate ?
+Fill timesheet
+Add Sprint wise Testing summary docupedia daily
+Add the daily bugs in the Bug report
+Add the vwms updates in weekly and montly updates
+Discuss with developer and prepare some testcases
+Add some automation testcases
+Reply to all the email
+Meeting and planning for the upcoming weeks
+
 
 #### How to Apply for leaves in corporate ?
 
