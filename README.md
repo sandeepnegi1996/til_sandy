@@ -25,6 +25,16 @@ Repository while learning new things we can write down it here
 below mentioned is the repository we will be using for the coding prepration.
 
 https://github.com/sandeepnegi1996/coding-interview-university
+1. The myth of Genius Programmer
+	1. Share as much code as you can share the code so that people know what you are working on.
+	2. Get Feedback 
+	3. Get code reviews
+	4. Try something different and then fail : Document when something fails : find the root cause 
+	5. I am gonna fail it doesn't matter i will learn more.
+	6. Iterate Quickly : fail quickly : 
+	7. Practice is the key
+	8. Be a small Fish : 
+	
 
 #### How to Open the firefox browser in incognito mode using selenium ?
 	
