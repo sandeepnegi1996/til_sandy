@@ -2,14 +2,14 @@
 Repository while learning new things we can write down it here
 
 #### Daily tasks in corporate ?
-Fill timesheet
-Add Sprint wise Testing summary docupedia daily
-Add the daily bugs in the Bug report
-Add the vwms updates in weekly and montly updates
-Discuss with developer and prepare some testcases
-Add some automation testcases
-Reply to all the email
-Meeting and planning for the upcoming weeks
+1. Fill timesheet
+2. Add Sprint wise Testing summary docupedia daily
+3. Add the daily bugs in the Bug report
+4. Add the vwms updates in weekly and montly updates
+5. Discuss with developer and prepare some testcases
+6. Add some automation testcases
+7. Reply to all the email
+8. Meeting and planning for the upcoming weeks
 
 
 #### How to Apply for leaves in corporate ?
@@ -20,6 +20,11 @@ Meeting and planning for the upcoming weeks
 4. Send out a calendar to your project team in our case it is workon.core
 5. Set up Auto reply for these leave dates in Outlook.
 
+#### Preparing for an interview 
+
+below mentioned is the repository we will be using for the coding prepration.
+
+https://github.com/sandeepnegi1996/coding-interview-university
 
 #### How to Open the firefox browser in incognito mode using selenium ?
 	
