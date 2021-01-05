@@ -4,7 +4,23 @@ Repository while learning new things we can write down it here
 
 #### How to break a Website ?
 
-1. 
+1. No Limit on Form fields length : almost all interactive websites is having some kind of input and there is no limit in the size of text
+	that can be entered in the form field. Entering the long text will ultmately crash the website or form will break.
+	use the below mentioned link for the long text : https://whiletrue.neocities.org/lte.html
+	Fix : website should truncate the unreasonably large text. or block requests that are above a certain size
+	
+	1. I have tried the above approach the also breaked few websites with the long text.
+
+2. SQL Injection :- send the sql query with the query to the database and it will return some fields 
+		    This vulnerability will be there when the developer is not sanitizing the query fields properly.
+2. Cross Site Scripting : when something will be written back to the website in that case there is chance that it can lead to 
+	cross site scripting attack.
+	1. Page content can be modified.
+	2. Session cookies could be revealed enabling a perpetrator to impersonate valid users and abuse their private accounts.
+	3. To successfully execute a stored XSS attack, a perpetrator has to locate a vulnerability in a web application and then inject malicious script into its 	     server (e.g., via a comment field).
+	
+
+
 
 #### Daily tasks in corporate ?
 1. Fill timesheet
