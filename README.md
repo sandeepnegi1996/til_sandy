@@ -1,6 +1,11 @@
 # til_sandy
 Repository while learning new things we can write down it here
 
+
+#### How to break a Website ?
+
+1. 
+
 #### Daily tasks in corporate ?
 1. Fill timesheet
 2. Add Sprint wise Testing summary docupedia daily
