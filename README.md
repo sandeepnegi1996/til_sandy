@@ -4,6 +4,8 @@ Repository while learning new things we can write down it here
 
 #### How to break a Website ?
 
+1. Broken links and validator : Verify that there are no broken links on the website.
+     1.using the tool web link validator(if website is not open to the world). or W3c link validator
 1. No Limit on Form fields length : almost all interactive websites is having some kind of input and there is no limit in the size of text
 	that can be entered in the form field. Entering the long text will ultmately crash the website or form will break.
 	use the below mentioned link for the long text : https://whiletrue.neocities.org/lte.html
