@@ -12,7 +12,7 @@ Repository while learning new things we can write down it here
 				
 we can follow this github script to do the same .
 
-https://github.com/AKSarav/diskspaceman/blob/master/diskspaceman.sh
+https://github.com/AKSarav/diskspaceman
 
 
 
