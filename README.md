@@ -1,6 +1,20 @@
 # til_sandy
 Repository while learning new things we can write down it here
 
+#### Log Rotation and Purging
+1. When you are using multiple servers for the tomcat,weblogic etc there is a considerate amount of logs that is being generated
+    it is very important to keep in check for these log files
+    
+2. For this we need to perform log rotation and log purging.
+	1. Log Rotation means saving log file with a current time stamp.
+	2. Log purging means : 1. Removing the old log files based on retention period
+				2. Compress the uncompressed rotated files.
+				
+we can follow this github script to do the same .
+
+https://github.com/AKSarav/diskspaceman/blob/master/diskspaceman.sh
+
+
 
 #### How to break a Website ?
 
