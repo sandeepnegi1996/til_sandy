@@ -1,6 +1,66 @@
 # til_sandy
 Repository while learning new things we can write down it here
 
+
+#### Testing API automation using postman
+1. Add a request and verify it is working from postman, later there is a tab called as tests where you can add all the test scripts
+2. We will be testing for the presence of response header, response header values, cookies present, cookies values, response status and much more
+
+```javascript
+pm.test("status code is 200",function() {
+    pm.expect(pm.response.code).to.eql(200);
+});
+
+pm.test("status code text",function() {
+    pm.response.to.have.status("OK");
+});
+
+//check that the content-type header is present in the response
+
+pm.test("content-type header is present ",function() {
+    pm.response.to.have.header("content-type");
+});
+
+//check that the header content-encoding is present in response
+
+pm.test("content-encoding header is present",function() {
+    pm.response.to.have.header("content-encoding");
+});
+
+//check the header transfer-encoding header is present
+
+pm.test("transfer-encoding header is present",function() {
+    pm.response.to.have.header("transfer-encoding");
+});
+
+//test whether cokkies is present or not
+
+pm.test("Cokkies JESSIONID is present",function() {
+    pm.expect(pm.cookies.has('JSESSIONID')).to.be.true;
+});
+
+//test the cokkies values for the Expires to be Session
+
+//check the response header for the particular values
+pm.test("Content-Type header is application/json",()=>{
+    pm.expect(pm.response.headers.get('Content-Type')).to.eql('application/json;charset=UTF-8');
+});
+
+//check the response header content-encoding value to be gzip
+
+pm.test("content-encoding is gzip",function() {
+    pm.expect(pm.response.headers.get('content-encoding')).to.eql('gzip');
+});
+
+
+//check the transfer-encoding value is chunked
+
+pm.test("transfer-encoding header value is chunked",function() {
+    pm.expect(pm.response.headers.get('transfer-encoding')).to.eql('chunked');
+})
+
+
+```
 #### Log Rotation and Purging
 1. When you are using multiple servers for the tomcat,weblogic etc there is a considerate amount of logs that is being generated
     it is very important to keep in check for these log files
