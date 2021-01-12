@@ -2,6 +2,21 @@
 Repository while learning new things we can write down it here
 
 
+#### Run the collection using the newman 
+
+	1. Install newman using node js 
+	2. First make sure proxy error is fixed
+		npm config set registry "http://registry.npmjs.org"
+		npm config set strict-ssl false
+		npm config set proxy http://"ntid:password"@proxy_url:8080
+		npm config set https-proxy http://"ntid:password"@proxy_url:8080
+	3. Export the collection
+	4. Export the environment variables
+	5. Navigate to directory and type :-  newman run collectionname.json -k --environment environment.json
+	If some errrors are coming make sure to add -k 
+	
+
+
 #### Testing API automation using postman
 1. Add a request and verify it is working from postman, later there is a tab called as tests where you can add all the test scripts
 2. We will be testing for the presence of response header, response header values, cookies present, cookies values, response status and much more
