@@ -2,6 +2,65 @@
 Repository while learning new things we can write down it here
 
 
+#### Type of put request in postman with randomBs
+
+``` json
+{
+    "summary": "{{$randomBs}}", 
+    "pkey": "testr", 
+    "issuetype": "test.issuetype.default",
+    "applicant": "Test",
+    "priority": "default", 
+    "sourceSystem": "test",
+    "data": {
+        "common.field.employee.firstname": "{{$randomFullName}}", 
+        "common.field.employee.lastname": "{{$randomLastName}}",
+        "common.field.employee.department": "{{$randomDepartment}}",
+        "common.field.employee.costcenter": "{{$randomAbbreviation}}",
+        "common.field.employee.location": "{{$randomCity}}",
+        "rbga.field.termCheck": "yes", 
+        "rbga.field.description": "Detailed Description for the request",
+        "rbga.field.comments": "Comments",
+        "rbga.field.workflowType": "Parallel",
+        "rbga.field.wf2": "Serial",
+        "rbga.field.wf3": "Serial",
+        "rbga.field.parallelWorkflowSel": "One approver approves the request",
+        "rbga.field.parallelWorkflowSel2": "All the Approvers has to approve",
+        "rbga.field.parallelWorkflowSel3": "All the Approvers has to approve",
+        "rbga.field.tempNew": "New Request",
+        "rbga.field.approvalstep": "One Step Approval",
+        "rbga.field.additionalFields": [ 
+            {
+                "fields": "fieldname",
+                "details": "value"
+            }
+        ],
+        "rbga.field.approver1": {                
+            "approvers": [
+                {
+                    "addAfterEnabled": true, 
+                    "deleteFlag": "Yes",
+                    "fixed": false,
+                    "removable": true, 
+                    "userid": "test",
+                    "ccList": "test" 
+                }
+            ],
+            "checkDuplicate": "false",
+            "maxApprover": "20", 
+            "type": "1" 
+        },
+        "rbga.field.attach": [ 
+            {
+                "filename": "TypeDataCreation_Catalytic_Schowcase_short.mp4",
+                "file": "Base64EncodedString"
+            }
+        ]
+    }
+}
+
+```
+
 #### Run the collection using the newman 
 
 	1. Install newman using node js 
