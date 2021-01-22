@@ -2,6 +2,15 @@
 Repository while learning new things we can write down it here
 
 
+#### How to delete a page from microsoft word that is filled with some text
+
+1.Click or tap anywhere in the page you want to delete, press Ctrl+G.
+2.In the Enter page number box, type \page.
+3.Press Enter on your keyboard, and then select Close.
+4.Verify that a page of content is selected, and then press Delete on your keyboard.
+
+
+
 #### Type of put request in postman with randomBs
 
 ``` json
