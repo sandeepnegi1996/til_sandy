@@ -1,6 +1,11 @@
 # til_sandy
 Repository while learning new things we can write down it here
 
+#### Howt to insert row or column in the excel ?
+
+1. Type Ctrl+Shift+ "+" and then select the option.
+
+
 
 #### How to delete a page from microsoft word that is filled with some text
 
