@@ -1,6 +1,38 @@
 # til_sandy
 Repository while learning new things we can write down it here
 
+
+#### Ho
+
+#### How to create a FAT JAR using maven and eclipse. ?
+
+1. Just put the below mentioned plugin in maven
+
+``` code
+
+<plugin>
+    <artifactId>maven-assembly-plugin</artifactId>
+    <configuration>
+        <archive>
+            <manifest>
+                <mainClass>com.inventory.gui.InventoryApp</mainClass>
+            </manifest>
+        </archive>
+        <descriptorRefs>
+            <descriptorRef>jar-with-dependencies</descriptorRef>
+        </descriptorRefs>
+    </configuration>
+</plugin>
+
+```
+2. Now in the maven build in eclipse : "assembly:single"
+3. After this A FAT jar that contains all the required libraries will be created and this JAR is a runnable JAR
+if we just double click on this JAR or type java -jar runnable.jar , this will be executed.
+4. In my case my JAR required some extra files so I need to keep those configuration files , in the same directory where there is the JAR.
+5. But I am not able to create a FAT jar using the cmd.
+6. 
+
+
 #### Howt to insert row or column in the excel ?
 
 1. Type Ctrl+Shift+ "+" and then select the option.
