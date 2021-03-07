@@ -1,6 +1,20 @@
 # til_sandy
 Repository while learning new things we can write down it here
 
+#### benefit of getters and setter
+1. in the below code when we set the value of field number we are checking that is num is less than 10 or if it is greater than 100
+2. than in that case what we can do is we can throw some expection
+3. but if we do not have setter any value can be set in this.
+
+```java
+public void setNumber(int num) {
+    if (num < 10 || num > 100) {
+        throw new IllegalArgumentException();
+    }
+    this.number = num;
+}
+
+```
 
 #### Why not to declare the private variables ?
 1. fields of a class are the implementation details and external class need not to know about the implmentation details 
