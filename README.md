@@ -30,7 +30,7 @@ public void setNumber(int num) {
 2. may lead to memory leak which can bring the application down ond later the box on which it is hosted.
 
 #### Non Compliant Code
-```code
+```java
 try {
 			FileInputStream input = new FileInputStream(configPath);
 			prop.load(input);
@@ -45,7 +45,7 @@ try {
 1. It was introduced in java 7.
 1. Either use finally block to close the resources or use the try with resources.
 
-```code
+```java
 	try (FileInputStream input = new FileInputStream(configPath);) {
 
 			prop.load(input);
