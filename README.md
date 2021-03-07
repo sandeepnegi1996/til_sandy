@@ -2,7 +2,36 @@
 Repository while learning new things we can write down it here
 
 
-#### Ho
+#### Coding guidelines java
+1. whenever creating object of stream, or creating connections make sure to close the resources if there is any failure to close the resources 
+2. may lead to memory leak which can bring the application down ond later the box on which it is hosted.
+
+#### Non Compliant Code
+```code
+try {
+			FileInputStream input = new FileInputStream(configPath);
+			prop.load(input);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+```
+
+#### Compliant code
+1. It was introduced in java 7.
+1. Either use finally block to close the resources or use the try with resources.
+
+```code
+	try (FileInputStream input = new FileInputStream(configPath);) {
+
+			prop.load(input);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+```
 
 #### How to create a FAT JAR using maven and eclipse. ?
 
