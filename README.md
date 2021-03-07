@@ -2,6 +2,15 @@
 Repository while learning new things we can write down it here
 
 
+#### Why not to declare the private variables ?
+1. fields of a class are the implementation details and external class need not to know about the implmentation details 
+2. external class should be able to get and set the data.
+3. by exposing the details as public we are telling outside classes that it is an actual peice of data that is being stored.
+4. if we make the class as public then external or other classes will depend on it which means if in later point of time 
+5. we change something then in that case it will also affects other classes.by implementing as method it will improve the flexibility
+6. of changing the values in later point in time.
+7. **try to make things immutable **
+
 #### Coding guidelines java
 1. whenever creating object of stream, or creating connections make sure to close the resources if there is any failure to close the resources 
 2. may lead to memory leak which can bring the application down ond later the box on which it is hosted.
