@@ -1,6 +1,12 @@
 # til_sandy
 Repository while learning new things we can write down it here
 
+
+#### Get Attribute value using selenium
+
+```code
+	link.getAttribute("href")
+```
 #### Remove unnecessary imports in eclipse for java
 ```code
 ctrl+shift+o
