@@ -2,12 +2,46 @@
 Repository while learning new things we can write down it here
 
 
+#### Get Attribute value using selenium
+
+```code
+	link.getAttribute("href")
+```
+#### Remove unnecessary imports in eclipse for java
+```code
+ctrl+shift+o
+
+```
+#### benefit of getters and setter
+1. in the below code when we set the value of field number we are checking that is num is less than 10 or if it is greater than 100
+2. than in that case what we can do is we can throw some expection
+3. but if we do not have setter any value can be set in this.
+
+```java
+public void setNumber(int num) {
+    if (num < 10 || num > 100) {
+        throw new IllegalArgumentException();
+    }
+    this.number = num;
+}
+
+```
+
+#### Why not to declare the private variables ?
+1. fields of a class are the implementation details and external class need not to know about the implmentation details 
+2. external class should be able to get and set the data.
+3. by exposing the details as public we are telling outside classes that it is an actual peice of data that is being stored.
+4. if we make the class as public then external or other classes will depend on it which means if in later point of time 
+5. we change something then in that case it will also affects other classes.by implementing as method it will improve the flexibility
+6. of changing the values in later point in time.
+7. **try to make things immutable **
+
 #### Coding guidelines java
 1. whenever creating object of stream, or creating connections make sure to close the resources if there is any failure to close the resources 
 2. may lead to memory leak which can bring the application down ond later the box on which it is hosted.
 
 #### Non Compliant Code
-```code
+```java
 try {
 			FileInputStream input = new FileInputStream(configPath);
 			prop.load(input);
@@ -22,7 +56,7 @@ try {
 1. It was introduced in java 7.
 1. Either use finally block to close the resources or use the try with resources.
 
-```code
+```java
 	try (FileInputStream input = new FileInputStream(configPath);) {
 
 			prop.load(input);
