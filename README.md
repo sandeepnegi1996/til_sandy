@@ -1,6 +1,13 @@
 # til_sandy
 Repository while learning new things we can write down it here
 
+#### Most used sql query at work
+
+below mentioned sql query will search the employee table with column name , employeename --> it should contain some value which has 'negi' in it.
+
+```code
+select * from EMPLOYEE where employeename like '%negi%';
+```
 
 #### Get Attribute value using selenium
 
