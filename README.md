@@ -1,6 +1,26 @@
 # til_sandy
 Repository while learning new things we can write down it here
 
+#### Sonar Reported Code smell
+
+`Return of boolean expressions should not be wrapped into an "if-then-else" statement`
+
+**Non Compliant Code **
+```java
+if (element2 != null) {
+	return true;
+	}
+return false;
+```
+
+**Compliant Code **
+```java
+return element2!=null;
+
+```
+1. in the compliant code it can be either true or false based on that it will be returned.
+2. 
+
 
 #### Serve static content locally using webserver
 I was once trying to run a project where i was running the html files but in that file i was accessing some more files
