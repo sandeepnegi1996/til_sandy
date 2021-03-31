@@ -1,6 +1,23 @@
 # til_sandy
 Repository while learning new things we can write down it here
 
+
+#### Sonar Qube reported code smell (Array)
+Array designator should be located on the type for better code readability.
+
+`Non Compliant`
+
+```java
+String splittedArray[]
+```
+
+`Compliant`
+```java
+String[] splittedArray
+```
+
+
+
 #### Sonar Reported Code smell
 
 `Return of boolean expressions should not be wrapped into an "if-then-else" statement`
