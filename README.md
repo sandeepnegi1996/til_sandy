@@ -4,10 +4,11 @@ Repository while learning new things we can write down it here
 ### API Design 
 
 
-API Checklist :-
+`API Checklist` :
 
 
-HTTP
+HTTP :
+
     Authentication →  basic auth
     HTTP Methods  → GET,POST,PUT,DELETE 
     Error Codes → 4xx client side error , and 5xx is server side errors
