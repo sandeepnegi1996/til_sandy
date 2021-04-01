@@ -1,6 +1,49 @@
 # til_sandy
 Repository while learning new things we can write down it here
 
+### API Design 
+
+
+API Checklist :-
+
+
+HTTP
+    Authentication →  basic auth
+    HTTP Methods  → GET,POST,PUT,DELETE 
+    Error Codes → 4xx client side error , and 5xx is server side errors
+    200 OK → request processed successfully
+    200 Accepted : Request is valid but hasn't been completed yet. it is normallly used when the processing queue takes place on the server side.
+    HTTP Compression → can be used for both request and response to improve the network performance. (lightbulb)
+        Note :- I think we can use this to reduce the response time 
+    HTTP Caching :  enabling the cache-control general header
+    Link Response Header :  (question)
+    Canoncial URL : (question)
+
+
+API Design :
+
+    Content Negotiation : multiple representation of the resurces with the possibility to redirect to specific format (question)
+    API Versioning : Put the version of API in the URL Ex. example.api.com/v1.0/path
+    Bulk Operations : Client should issue fewer request to modify more data.
+    Error Logging : distinguish error based on client side and server side error
+
+
+Content
+
+    Content Types : JSON
+    Date/Time : While providing date and time in the API use the format that includes the timezone information.
+
+
+Security
+
+    SSL -HTTPS
+
+
+Other Stuff :
+
+    Documentation
+    Feedback
+    Automated Testing
 
 #### Sonar Qube reported code smell (Array)
 Array designator should be located on the type for better code readability.
