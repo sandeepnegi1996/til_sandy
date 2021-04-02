@@ -1,6 +1,22 @@
 # til_sandy
 Repository while learning new things we can write down it here
 
+
+### Best Way to scroll in selenium
+
+```java
+
+public void scrollNTimes(int times)  {
+
+		while (times-- > 0) {
+
+			action.sendKeys(Keys.PAGE_DOWN).perform();
+
+		}
+	}
+	
+
+```
 ### API Design 
 
 
