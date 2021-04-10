@@ -40,3 +40,98 @@ Q3. Why Java is platform independent?
 Q5. What are wrapper classes in Java?
 - Wrapper claases are used to wrap the primitive data type into Refrence type, we have wrapper classes for each of the primitive data type.
 - 
+Q6. What are constructors in Java?
+- basically its a method , and its name is same as the class name with no return type and it is used to initialize the object of the class
+- whenever we create an object of the class this contructor will be invoked
+- **Default Constructor** - this constructor does not have any parameters.
+- **Prameterized Constructor** -has parameters
+
+Q7. What is singleton class in Java and how can we make a class singleton?
+- A class in which we can have only one instance of the class at any given point.
+- We require - private constructor and a method with return type as the class reference to return the object
+- So whenever we call the getInstance method same object will be returned if the install is null, then it will create an instance.
+
+
+```java
+// Java program implementing Singleton class
+// with getInstance() method
+class Singleton
+{
+	// static variable single_instance of type Singleton
+	private static Singleton single_instance = null;
+
+	// variable of type String
+	public String s;
+
+	// private constructor restricted to this class itself
+	private Singleton()
+	{
+		s = "Hello I am a string part of Singleton class";
+	}
+
+	// static method to create instance of Singleton class
+	public static Singleton getInstance()
+	{
+		if (single_instance == null)
+			single_instance = new Singleton();
+
+		return single_instance;
+	}
+}
+
+// Driver Class
+class Main
+{
+	public static void main(String args[])
+	{
+		// instantiating Singleton class with variable x
+		Singleton x = Singleton.getInstance();
+
+		// instantiating Singleton class with variable y
+		Singleton y = Singleton.getInstance();
+
+		// instantiating Singleton class with variable z
+		Singleton z = Singleton.getInstance();
+
+		// changing variable of instance x
+		x.s = (x.s).toUpperCase();
+
+		System.out.println("String from x is " + x.s);
+		System.out.println("String from y is " + y.s);
+		System.out.println("String from z is " + z.s);
+		System.out.println("\n");
+
+		// changing variable of instance z
+		z.s = (z.s).toLowerCase();
+
+		System.out.println("String from x is " + x.s);
+		System.out.println("String from y is " + y.s);
+		System.out.println("String from z is " + z.s);
+	}
+}
+
+
+```
+Q9. What is the difference between equals() and == in Java?
+
+```java
+// Java program to understand 
+// the concept of == operator
+public class Test {
+    public static void main(String[] args)
+    {
+        String s1 = new String("HELLO");
+        String s2 = new String("HELLO");
+        System.out.println(s1 == s2);
+        System.out.println(s1.equals(s2));
+    }
+}
+```
+
+
+
+
+
+
+
+
