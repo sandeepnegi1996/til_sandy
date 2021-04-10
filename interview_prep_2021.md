@@ -12,6 +12,33 @@
 #### Material
 1. [](https://github.com/sandeepnegi1996/coding-interview-university)
 
+## Lam Research Interview Questions :
+- There are 2 coding problems and one puzzle 
+
+Q1. Write any of the sorting algorithm ? 
+Ans. I have written bubble sort , but i think it is better if i can code other sorting algorithms too.
+Q2. Write the code to generate the pyramid (triangle one). ?
+Ans. This one was working fine .
+Q3. Two candle of same length but different thickness
+	- thick candle take 6 hours to burn completely 
+	- Thin candle take 4 hours to burn completely
+- So i lit both the candle and went out of the room , after some time when i return i can see that thick is twice as much as thin.
+
+Ans. So to solve the candle problem, after 1 hour what will happen
+ 1 hour --> thick candle --> remaining --> 5/6 remaining 
+        --> thin candle  --> remiaing  --> 3/4 remaining 
+	
+
+2nd hour  --> thick candle  --> remaining  --> 4/6 
+         ---> thin candle   --> reamining  --> 2/4 
+	
+3rd hour  --> thick candle  --> remaining  --> 3/6 --> 1/2
+          --> thin candle   --> remaining  --> 1/4  --> 1/4
+	  
+	  at this time thick candle is twice as thin candle , so it took basically 3 hours.
+	 
+
+
 
 ## Java Interview Questions 
 
