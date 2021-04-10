@@ -17,6 +17,44 @@
 
 Q1. Write any of the sorting algorithm ? 
 Ans. I have written bubble sort , but i think it is better if i can code other sorting algorithms too.
+
+```java
+//so in bubble sort we compare adjace element only
+
+// 5,4,3,2,1,   --> 4,5,3,2,1
+
+// 4,5,3,2,1    -->
+
+class BubbleSortTest{
+
+	public static void main(String[] args) {
+		
+		System.out.println("hello world");
+
+		int arr[]={5,4,3,2,1};
+
+		int temp=0;
+
+		for(int i=0;i<arr.length-1;i++) {
+			for(int j=0;j<arr.length-i-1;j++)
+			{
+				if(arr[j]>arr[j+1]) {
+
+					temp=arr[j];
+					arr[j]=arr[j+1];
+					arr[j+1]=temp;
+				}
+			}
+		}
+		
+		for(int a : arr) 
+		{
+
+			System.out.print(a+"  ");
+		}
+	}
+}
+```
 Q2. Write the code to generate the pyramid (triangle one). ?
 Ans. This one was working fine .
 Q3. Two candle of same length but different thickness
