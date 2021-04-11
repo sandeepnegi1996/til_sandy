@@ -1,5 +1,9 @@
 # Prepare for the interview 
 
+Follow below for the interview prepration , log in using linkedin 
+
+https://www.ambitionbox.com/interviews 
+
 
 1. Datastructures
 2. Algorithms
