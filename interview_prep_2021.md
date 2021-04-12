@@ -11,16 +11,6 @@ https://www.ambitionbox.com/interviews
 4. Architectural design questions
 5. Behavioral Questions
 
-## Test Engineer Interview Questions
-Q1. What is alpha and beta testing ?
--Alpha testing : kind of user acceptance testing which is done by testers, in the test environment to find the potential bugs
-                  1. Most of the issues identified in alpha testing can be rectified by the developer
-
-
--Beta Testing : It is done by real time user
-                  1. Most of the issues are reported as the feedback and will be taken in future releases
-
-
 #### Material
 1. [](https://github.com/sandeepnegi1996/coding-interview-university)
 
