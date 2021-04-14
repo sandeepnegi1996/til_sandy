@@ -1,6 +1,11 @@
 # til_sandy
 Repository while learning new things we can write down it here
 
+### K6 is similar to jmeter to jmeter and it can be used to the performance testing.
+
+
+
+
 #### Sonar Reported Code smell
 
 `Return of boolean expressions should not be wrapped into an "if-then-else" statement`
