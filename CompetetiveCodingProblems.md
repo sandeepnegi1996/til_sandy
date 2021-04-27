@@ -82,6 +82,19 @@ public class MyClass {
 ```
 
 
-2. How to swap two numbers without using a third variable?
-Solution:
+2. How to swap two numbers without using a third variable ?
 
+- Approach 1 : multiplication
+```code
+a=a*b;
+b=a/b;
+a=a/b;
+
+```
+- Approach 2: Addition
+```code
+a=a+b;
+b=a-b;
+a=a-b;
+
+```
