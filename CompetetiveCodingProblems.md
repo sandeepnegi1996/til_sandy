@@ -81,3 +81,7 @@ public class MyClass {
 
 ```
 
+
+2. How to swap two numbers without using a third variable?
+Solution:
+
