@@ -82,6 +82,12 @@ Ans. So to solve the candle problem, after 1 hour what will happen
 
 ## Java Interview Questions 
 
+1. What is dependency injection ?
+2. What is autowiring ?
+3. What is bean factory ?
+4. What is the rest api annotation you have used ?
+5. 
+
 Q1. jdk vs jre vs jvm
 - jd k is a development kit , it contains jre and inside jre there is jvm , jdk also contains other bunch of tools such as , javac
 - javadoc, jar,
