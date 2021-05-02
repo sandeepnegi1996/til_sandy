@@ -1,6 +1,49 @@
 # til_sandy
 Repository while learning new things we can write down it here
 
+
+### Executor Service Thread Pool
+
+```java
+  //Summary //
+
+    // Thread --> Runnable implements
+
+    // Create threads for each task
+
+    // Create executor service and give all the task to service 
+
+    // how to decide the pool size 
+
+
+    //in CPU intensive task
+    // Number of threads should be equal to core so that n
+   // o thread will wait
+
+    // in case of Task --> IO intensive --> network calls --> Database calls
+
+    // in that case we can increase the size of the pool since some threads will be waiting for response
+
+    public static void main(String[] args) {
+       int coreCount= Runtime.getRuntime().availableProcessors();
+       System.out.println(coreCount);
+
+       ExecutorService service = Executors.newFixedThreadPool(coreCount);
+
+       for (int i = 0; i < 1000; i++) {
+
+           service.execute(new Task());
+           
+       }
+   }
+
+   static class Task implements Runnable {
+       public void run() {
+           System.out.println(Thread.currentThread().getName());
+       }
+   }
+}
+```
 ### Convert image to Base 64 encoded string using java
 
 ```java
