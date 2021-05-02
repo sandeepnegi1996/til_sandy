@@ -1,6 +1,62 @@
 # til_sandy
 Repository while learning new things we can write down it here
 
+### Convert image to Base 64 encoded string using java
+
+```java
+public static void main(String[] args) throws IOException {
+
+        File f =  new File("converted/before.png");
+          String base64String = encodeFileToBase64Binary(f);
+          System.out.println(base64String);
+          convertBase64StringToImage(base64String);
+    }
+
+    private static String encodeFileToBase64Binary(File file){
+         String encodedfile = null;
+         try {
+             FileInputStream fileInputStreamReader = new FileInputStream(file);
+             byte[] bytes = new byte[(int)file.length()];
+             fileInputStreamReader.read(bytes);
+             encodedfile=Base64.getEncoder().encodeToString(bytes);
+         } catch (FileNotFoundException e) {
+             e.printStackTrace();
+         } catch (IOException e) {
+             e.printStackTrace();
+         }finally {
+        	 
+         }
+
+         return encodedfile;
+     }
+    
+    private static void convertBase64StringToImage(String base64String) throws IOException {
+    	
+    	
+    	 
+    	        // this is not the real stream just for example
+    	     
+    	        // decode base64 encoded image
+    	        BASE64Decoder decoder = new BASE64Decoder();
+    	        byte[] decodedBytes = decoder.decodeBuffer(base64String);
+    	       
+    	           
+    	         String uploadFile = "converted/test.png";
+    	        
+    	         // buffered image from the decoded bytes 
+    	         BufferedImage image = ImageIO.read(new ByteArrayInputStream(decodedBytes));
+    	        
+    	         File f = new File(uploadFile);
+    	 
+    	         // write the image
+    	          ImageIO.write(image, "png", f);
+    	      
+    	
+    	
+    }
+
+```
+
 ### K6 is similar to jmeter to jmeter and it can be used to the performance testing.
 
 
