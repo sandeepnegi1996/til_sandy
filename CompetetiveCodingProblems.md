@@ -1,7 +1,8 @@
 # Competitve coding problems
 
+[https://www.journaldev.com/370/java-programming-interview-questions](Website link)
 
-1. How to Reverse a String in Java ?
+## 1. How to Reverse a String in Java ?
 
 Solution:
 1. Approach 1: Just print the string in the reverse order
@@ -82,7 +83,7 @@ public class MyClass {
 ```
 
 
-2. How to swap two numbers without using a third variable ?
+## 2. How to swap two numbers without using a third variable ?
 
 - Approach 1 : multiplication
 ```code
@@ -98,3 +99,57 @@ b=a-b;
 a=a-b;
 
 ```
+
+## 3. How to check vowel is present in the string ?
+
+- Approach 1 : Most Useful, We will use regex to find wether vowels present in the stirng or not.
+```java
+    public static Boolean isVowelPresent(String sample) {
+
+        return sample.toLowerCase().matches(".*[aeiou].*");
+    }
+```
+
+- Approach 2 : Traversing one by one and finding whether vowel is present or not using ```indexOf``` method
+
+
+```java
+
+    public static Boolean isVowelPresent(String sample) {
+        char vowelArr[] = { 'a', 'e', 'i', 'o', 'u' };
+
+        for (int i = 0; i < vowelArr.length; i++) {
+            char currentVowel = vowelArr[i];
+
+           if(sample.indexOf(currentVowel)!=-1){
+               return true;
+           }
+        }
+        return false;
+    }
+}
+
+
+```
+
+- Approach 3 : Traversing one by one and finding the vowel ``` old fashion ```
+```java
+    public static Boolean isVowelPresent(String sample) {
+        char vowelArr[] = { 'a', 'e', 'i', 'o', 'u' };
+
+        for (int i = 0; i < vowelArr.length; i++) {
+            char currentVowel = vowelArr[i];
+
+            for (int j = 0; j < sample.length(); j++) {
+                if (currentVowel == sample.charAt(j)) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+}
+```
+
+
+                   
