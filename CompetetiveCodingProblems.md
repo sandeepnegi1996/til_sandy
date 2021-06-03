@@ -151,5 +151,49 @@ a=a-b;
 }
 ```
 
+## 3. How to print nth Fibonacci number using recursion and iteration ?
+
+- Approach 1 : Recursion , this one is comparetively easy 
+``` java
+public static  int  printFibonacciNthRecursion(int n) {
+      
+     
+        if(n==1)
+            return 0;
+
+        if(n==2)
+            return 1;
+
+        return printFibonacciNthRecursion(n-1)+printFibonacciNthRecursion(n-2);
+
+    }
+```
+
+- Approach 2: Iteration : here we have used two variable first and second after each iteration , first will store value of second and second will store result value.
+- 
+
+```java
+ public static int printNthFibonacci(int n) {
+
+        if(n==1) 
+            return 0;
+
+        if(n==2) 
+            return 1;
+
+        int first=0;
+        int second =1;
+        int result=0;
+
+        for(int i=3;i<=n;i++) {
+            result=first+second;
+            first=second;
+            second=result;
+
+        }
+        return result;
+    }
+```
+
 
                    
