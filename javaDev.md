@@ -137,3 +137,10 @@ Q9. Joins in sql
 
 
 
+Q2. Is Java platform-independent, if yes why? 
+
+- yes, java is platform-independent.
+- Lets understand how a program compiles, so what happends , our .java file is converted to bytecode (.class) file this file is given to the JVM and JVM can run this bytecode.
+- This ByteCode can run on any machine (MAC, Linux , Windows) Assuming that machine is having JVM installed and JVM is platform dependent.
+- So we have different JVM for different OS , means JVM is platform dependent but the .class files (Bytecode ) can run on any machine, that the reason we say java is platfor independent.
+- 
