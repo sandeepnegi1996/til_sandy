@@ -119,3 +119,21 @@ Q9. Joins in sql
   
   
   https://www.ambitionbox.com/profiles/java-developer/interview-questions
+  
+  
+  
+  
+  ----------------------------------------------------------------------------------------------------------------------
+  ## Solutions
+  
+  Q1. Explain public static void main (String args []) in Java. 
+  
+  - main is the starting point of the java program and JVM calls this method main.
+  - public -> access modifier --> means it can be accessed from anywhere, so that JVM can call this method
+  - static -> This method is associated with class, and JVM can call this method without creating object of the class, so basically we are saving some memory.
+  - void   -> return type is void, once the program finished , there is no point of returning something that's why it is void
+  - main   -> Is a method name for which JVM looks for 
+  - String args[] -> This is just the argument that can be send while runnint the Program from command line , and we can use these values in our program.
+
+
+
