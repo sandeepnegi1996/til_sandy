@@ -2,6 +2,62 @@
 Repository while learning new things we can write down it here
 
 
+### Javascript map, filter and reduce.
+
+```code
+// map is used when we wants to preform some action on each element of the aray
+//filter will be used when we wants to filter some element from the array based on some condition
+//
+
+const arr=[1,2,3,4,5,6];
+
+
+const newArr= arr.filter(a=>a % 2 === 0);  //filter will create a new array by applying the conditions that we will say
+
+console.log(newArr);
+
+const newMapArr= arr.map(a=>a % 2 === 0);   //map is used when we wants to apply some operation on all the elements of the arrat
+
+console.log(newMapArr);
+
+
+
+const newMapArr2= arr.map(a=>a + 2); //here we are adding "2"on each array element
+
+console.log(newMapArr2);
+
+// filter() is used to get all the students whose grades are greater than or equal to 90.
+
+const students = [
+  { name: 'Quincy', grade: 96 },
+  { name: 'Jason', grade: 84 },
+  { name: 'Alexis', grade: 100 },
+  { name: 'Sam', grade: 65 },
+  { name: 'Katie', grade: 90 }
+];
+
+
+const newArrayStudent=students.filter( student=> student.grade>=90);
+console.log(newArrayStudent);
+
+
+//Reduce will be used when we wants a single value outout from the array
+//we will reduce it to single value by getting the sum of all values
+
+const arrR=[1,2,3,4,5,6];
+
+const sum= arrR.reduce( function (result,currentItem) {
+    return result+currentItem;
+    
+});
+
+console.log(sum);
+
+
+
+
+```
+
 ### Executor Service Thread Pool
 
 ```java
